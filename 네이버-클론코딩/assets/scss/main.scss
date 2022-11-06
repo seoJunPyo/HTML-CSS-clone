@@ -1,0 +1,33 @@
+//abstracts
+@import "./abstrascts/variables";
+@import "./abstrascts/variables_color";
+@import "./abstrascts/mixin_common";
+
+//base
+@import "./base/preset";
+@import "./base/reset";
+
+//componenets
+@import "./components/order_type";
+@import "./components/header_area";
+@import "./components/order_info_area";
+@import "./components/recent_order_area";
+@import "./components/menu-category-area";
+@import './components/menu-list-area';
+@import './components/menu_item_area';
+@import './components/order_box_area';
+@import './components/go_to_top';
+
+@import './components/detail/menu_detal-area';
+@import './components/detail/option_popup_area';
+@import './components/detail/menu_review_area';
+
+@import './components/amount_select';
+
+@import './components/order/order_content';
+@import './components/order/order_content_extra';
+@import './components/order/order_form_area';
+@import './components/order/modal';
+
+//page
+@import './page/order_page';

@@ -1,0 +1,367 @@
+@import "/airbnb_clone/style/reset.css";
+@import "/airbnb_clone/style/default.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+.wrap {
+  background-color: #fff;
+  width: 80%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+  z-index: 10;
+}
+
+.header-notice {
+  color: #fff;
+  font-weight: bold;
+}
+
+header .gnb {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 200px 1fr 300px;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "logo gnb-menu profile-menu"
+    "search search search";
+}
+
+header .gnb .logo {
+  grid-area: logo;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+header .gnb .gnb-menu {
+  grid-area: gnb-menu;
+  display: flex;
+  align-items: center;
+}
+
+.black-bg {
+  position: absolute;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 1000px;
+  z-index: 1;
+}
+
+.menu-list {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.menu-item {
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+header .gnb .profile-menu {
+  grid-area: profile-menu;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 20%;
+}
+
+header .gnb .search {
+  grid-area: search;
+}
+
+.menu-item:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 5px;
+  background-color: #fff;
+}
+
+.menu-item:hover {
+  color: lightgray;
+}
+
+.active:hover::before {
+  width: 15px;
+}
+
+.active:hover {
+  color: #fff;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 15px;
+  background-color: #fff;
+}
+
+.profile-menu .profile {
+  display: flex;
+  color: gray;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.profile-menu .menu-hover {
+  padding: 10px 10px;
+}
+
+.profile-menu .menu-hover:hover {
+  background-color: rgba(172, 172, 172, 0.3);
+  border-radius: 30px;
+}
+
+.search-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #fff;
+  color: black;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 700;
+  align-items: flex-start;
+  padding: 5px;
+  padding-left: 15px;
+  border-right: 1px solid lightgray;
+  background-color: #fff;
+}
+
+.test input {
+  margin-top: 4px;
+  outline: none;
+  border: none;
+  width: 80%;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.search-btn {
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-color: #ff385c;
+  border-radius: 100%;
+}
+
+.test:hover {
+  background-color: lightgray;
+  border-radius: 30px;
+}
+
+.notice {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff385c;
+  border-radius: 14px;
+  text-align: center;
+  height: 320px;
+  z-index: 10;
+}
+
+.notice p {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.8em;
+  margin-bottom: 2rem;
+}
+
+.notice button {
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  color: #fff;
+  background-color: inherit;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.main-banner {
+  position: relative;
+  height: 600px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-image: url(https://via.placeholder.com/600);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50px;
+  z-index: 10;
+}
+
+.main-banner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-banner p {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+.main-banner button {
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.main-banner button span {
+  background: linear-gradient(90deg, #6f019c 0%, #c6019c 135.12%);
+  -webkit-background-clip: -webkit-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.city {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  width: 25%;
+  margin-right: 30px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 15px 15px 0 0;
+}
+
+.card figcaption {
+  border-radius: 0 0 15px 15px;
+  height: calc(150px - calc(24px * 2));
+  padding: 24px 16px;
+  color: #fff;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.card figcaption p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card figcaption span {
+  font-size: 0.8em;
+}
+
+.expression {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+  grid-template-areas:
+    "heading heading"
+    "div1 div2";
+}
+
+.expression .heading {
+  grid-area: heading;
+}
+
+.photo-div {
+  width: 100%;
+  height: 700px;
+  padding: 60px;
+  border-radius: 14px;
+}
+
+.photo-div:nth-of-type(1) {
+  background-image: url(https://via.placeholder.com/450x500);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-div:nth-of-type(2) {
+  background-image: url(https://via.placeholder.com/450x500);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-div p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+.photo-div button {
+  color: black;
+  font-weight: bold;
+  border: none;
+  background-color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.photo-div button:hover {
+  background-color: #eaeaea;
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메뉴 디테일</title>
+    <link rel="stylesheet" href="./../assets/css/main.css" />
+  </head>
+  <body class="scroll-off">
+    <div class="container">
+      <!-- 고정헤더 영역 -->
+      <header class="header-area">
+        <div class="place-header" role="banner">
+          <h1 class="title">
+            <a href="#" class="link-back">
+              <img
+                src="/assets/images/ico-back.svg"
+                alt="뒤로가기"
+                class="link-back"
+              />
+            </a>
+            샐러드 아무개지점
+          </h1>
+          <a href="#" class="myOrders">주문내역</a>
+        </div>
+        <div class="place-tab" role="tablist">
+          <div class="tab-inner">
+            <a href="#" class="tab">
+              <span class="txt">홈</span>
+            </a>
+            <a href="#" class="tab is-active" role="tab">
+              <span class="txt">메뉴</span>
+            </a>
+            <a href="#" class="tab">
+              <span class="txt">리뷰</span>
+            </a>
+            <a href="#" class="tab">
+              <span class="txt">사진</span>
+            </a>
+            <a href="#" class="tab">
+              <span class="txt">지도</span>
+            </a>
+            <a href="#" class="tab">
+              <span class="txt">주변</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- //고정헤더 영역 -->
+      <div class="menu-detail-area">
+        <div
+          class="menu-img common-inner"
+          style="background-image: url('https://via.placeholder.com/400x300')"
+        ></div>
+        <!--// 메뉴 이미지 -->
+
+        <!-- 메뉴 설명 영역 -->
+        <div class="menu-info-area">
+          <div class="common-inner">
+            <p class="menu-name-group">
+              <span class="menu-name"> 메뉴 이름 </span>
+              <span class="badge-popular">인기</span>
+            </p>
+
+            <div class="menu-info-group">
+              <span class="menu-price">1,000원</span>
+              <span class="menu-grade">
+                <img src="/assets/images/ico-star-group-fill.svg" alt="" />
+                5.00
+              </span>
+              <span class="menu-number-of-order"> 주문순 <em>999</em> </span>
+            </div>
+            <p class="menu-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <!-- // 메뉴 설명 영역 -->
+            <!-- 메뉴주문 영역 -->
+            <div class="order-type-area">
+              <div class="type-select">
+                <div class="title">
+                  <svg
+                    width="100%x"
+                    height="100%"
+                    viewBox="-32 0 512 512"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon-n-logo"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M16 32C11.8333 32 8.125 33.5833 4.875 36.75C1.625 39.9167 0 43.6667 0 48V464C0 468.333 1.625 472.083 4.875 475.25C8.125 478.417 11.8333 480 16 480H432C436.167 480 439.875 478.417 443.125 475.25C446.375 472.083 448 468.333 448 464V48C448 43.6667 446.375 39.9167 443.125 36.75C439.875 33.5833 436.167 32 432 32H16ZM100.25 144H186.5L261.5 256V144H347.75V368H261.5L186.5 256V368H100.25V144Z"
+                    ></path>
+                  </svg>
+                  주문
+                </div>
+                <div class="tab-swicth-box" role="tablist">
+                  <a href="#" class="tab-swicth is_active"> 포장 </a>
+                  <a href="#" class="tab-swicth"> 매장 </a>
+                </div>
+              </div>
+              <div class="type-amount">
+                <div class="title">수량</div>
+                <div class="amount-select">
+                  <button class="btn-minus" disabled></button>
+                  <span class="amount">1</span>
+                  <button class="btn-plus"></button>
+                </div>
+              </div>
+              <button class="btn-order">1개 담기 1,000원</button>
+              <!-- <button class="btn-order" disabled>
+                지금 주문 가능한 시간이 아닙니다.
+              </button> -->
+            </div>
+            <!-- // 메뉴주문 영역 -->
+          </div>
+        </div>
+        <!-- 리뷰 사진 영역 -->
+        <div class="menu-review-area">
+          <div class="orderer-img-area">
+            <div class="common-inner">
+              <div class="title">
+                주문자 사진
+                <span class="num">99</span>
+              </div>
+              <div class="scroll-x">
+                <ul class="orderer-pic-list">
+                  <li class="orderer-pic-item">
+                    <a href="#" class="orderer-pic-link">
+                      <img
+                        src="https://via.placeholder.com/104/fff/000"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="orderer-pic-item">
+                    <a href="#" class="orderer-pic-link">
+                      <img
+                        src="https://via.placeholder.com/104/fff/000"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="orderer-pic-item">
+                    <a href="#" class="orderer-pic-link">
+                      <img
+                        src="https://via.placeholder.com/104/fff/000"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="orderer-pic-item">
+                    <a href="#" class="orderer-pic-link">
+                      <img
+                        src="https://via.placeholder.com/104/fff/000"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="orderer-pic-item">
+                    <a href="#" class="orderer-pic-link">
+                      <img
+                        src="https://via.placeholder.com/104/fff/000"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="orderer-pic-item">
+                    <a href="#" class="orderer-pic-link">
+                      <img
+                        src="https://via.placeholder.com/104/fff/000"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--// 리뷰 사진 영역 -->
+
+        <!-- 주문자 리뷰 영역 -->
+        <div class="orderer-review-area">
+          <div class="common-inner">
+            <div class="title">
+              주문자 리뷰
+              <span class="num">999</span>
+            </div>
+            <ul class="review-list">
+              <li class="review-item">
+                <div class="review-star">
+                  <span class="ico-star-group">
+                    <span class="ico-star-group-fill" style="width: 60%"></span>
+                  </span>
+                  <span class="point">3.0</span>
+                </div>
+                <p class="review-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Similique numquam dolor, fugit soluta ducimus temporibus
+                  incidunt quis, libero corrupti repellat sunt cupiditate
+                  reiciendis ipsam recusandae? Velit voluptatum distinctio
+                  possimus id.
+                </p>
+                <div class="review-info">
+                  <span class="review-name">dfa***</span>
+                  <span class="review-date">2022. 10. 12</span>
+                </div>
+              </li>
+              <li class="review-item">
+                <div class="review-star">
+                  <span class="ico-star-group">
+                    <span class="ico-star-group-fill"></span>
+                  </span>
+                  <span class="point">4.5</span>
+                </div>
+                <p class="review-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Similique numquam dolor, fugit soluta ducimus temporibus
+                  incidunt quis, libero corrupti repellat sunt cupiditate
+                  reiciendis ipsam recusandae? Velit voluptatum distinctio
+                  possimus id.
+                </p>
+                <div class="review-info">
+                  <span class="review-name">dfa***</span>
+                  <span class="review-date">2022. 10. 12</span>
+                </div>
+              </li>
+              <li class="review-item">
+                <div class="review-star">
+                  <span class="ico-star-group">
+                    <span class="ico-star-group-fill"></span>
+                  </span>
+                  <span class="point">4.5</span>
+                </div>
+                <p class="review-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Similique numquam dolor, fugit soluta ducimus temporibus
+                  incidunt quis, libero corrupti repellat sunt cupiditate
+                  reiciendis ipsam recusandae? Velit voluptatum distinctio
+                  possimus id.
+                </p>
+                <div class="review-info">
+                  <span class="review-name">dfa***</span>
+                  <span class="review-date">2022. 10. 12</span>
+                </div>
+              </li>
+            </ul>
+            <button class="btn-more">더보기</button>
+          </div>
+        </div>
+        <!--// 주문자 리뷰 영역 -->
+      </div>
+
+      <!-- 주문 옵션 팝업 -->
+      <div class="option-popup-area hidden">
+        <div class="dimmed-layer light">
+          <div class="menu-option-popup">
+            <svg class="content-top-pattern" width="100%" height="100%">
+              <defs>
+                <pattern
+                  id="pattern-triangle"
+                  x="0"
+                  y="0"
+                  width="10"
+                  height="11"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <polygon points="5 5, 10 10, 10 11, 0 11, 0 10" />
+                </pattern>
+              </defs>
+              <rect
+                x="0"
+                y="0"
+                width="100%"
+                height="100%"
+                fill="url(#pattern-triangle)"
+              />
+            </svg>
+            <div class="content-top">
+              <div class="common-inner">
+                <div class="menu-img-area">
+                  <img
+                    src="https://via.placeholder.com/70/fff/000"
+                    alt=""
+                    class="menu-img"
+                  />
+                </div>
+                <div class="menu-detail-area">
+                  <p class="menu-name">
+                    <span class="name">이름</span>
+                    <span class="badge">포장</span>
+                  </p>
+                  <div class="amount-select">
+                    <button class="btn-minus" disabled></button>
+                    <span class="amount">1</span>
+                    <button class="btn-plus"></button>
+                  </div>
+                </div>
+                <button class="btn-close">
+                  <img
+                    src="../assets/images/ico-close.svg"
+                    alt=""
+                    class="ico-close"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="content-body">
+              <div class="option-group">
+                <div class="option-title">
+                  <p class="title">
+                    <span class="badge required">필수</span>
+                    <span class="text">베이스 선택</span>
+                  </p>
+                </div>
+                <ul class="option-list">
+                  <li class="optoin-item">
+                    <input
+                      type="radio"
+                      name="베이스"
+                      class="input-radio"
+                      id="rd1"
+                    />
+                    <label for="rd1" class="label">
+                      <span class="label-text">추천대로</span>
+                      <span class="label-icon"></span>
+                    </label>
+                  </li>
+                  <li class="optoin-item">
+                    <input
+                      type="radio"
+                      name="베이스"
+                      class="input-radio"
+                      id="rd2"
+                    />
+                    <label for="rd2" class="label">
+                      <span class="label-text">추천대로</span>
+                      <span class="label-icon"></span>
+                    </label>
+                  </li>
+                  <li class="optoin-item">
+                    <input
+                      type="radio"
+                      name="베이스"
+                      class="input-radio"
+                      id="rd3"
+                    />
+                    <label for="rd3" class="label">
+                      <span class="label-text">추천대로</span>
+                      <span class="label-icon"></span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="option-group">
+                <div class="option-title">
+                  <p class="title">
+                    <span class="badge required">필수</span>
+                    <span class="text">베이스 선택</span>
+                  </p>
+                </div>
+                <ul class="option-list">
+                  <li class="optoin-item">
+                    <input type="checkbox" class="input-check" id="chk1" />
+                    <label for="chk1" class="label">
+                      <span class="label-text">추가</span>
+                      <span class="label-icon"></span>
+                    </label>
+                  </li>
+                  <li class="optoin-item">
+                    <input type="checkbox" class="input-check" id="chk2" />
+                    <label for="chk2" class="label">
+                      <span class="label-text"
+                        >추가
+                        <span class="price">+500원</span>
+                      </span>
+                      <span class="label-icon"></span>
+                    </label>
+                  </li>
+                  <li class="optoin-item">
+                    <input type="checkbox" class="input-check" id="chk3" />
+                    <label for="chk3" class="label">
+                      <span class="label-text"
+                        >추가
+                        <span class="price">+500원</span>
+                      </span>
+                      <span class="label-icon"></span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="option-group">
+                <div class="option-title">
+                  <p class="title">
+                    <span class="badge">필수</span>
+                    <span class="text">토핑</span>
+                  </p>
+                  <p class="desc">최대 5개까지 선택할 수 있습니다.</p>
+                </div>
+                <ul class="option-list">
+                  <li class="optoin-item">
+                    <label for="" class="label">치킨 +1,500원</label>
+                    <div class="amount-select">
+                      <button class="btn-minus" disabled></button>
+                      <span class="amount">1</span>
+                      <button class="btn-plus"></button>
+                    </div>
+                  </li>
+                  <li class="optoin-item">
+                    <label for="" class="label">치킨 +1,500원</label>
+                    <div class="amount-select">
+                      <button class="btn-minus" disabled></button>
+                      <span class="amount">1</span>
+                      <button class="btn-plus"></button>
+                    </div>
+                  </li>
+                  <li class="optoin-item">
+                    <label for="" class="label">치킨 +1,500원</label>
+                    <div class="amount-select">
+                      <button class="btn-minus" disabled></button>
+                      <span class="amount">1</span>
+                      <button class="btn-plus"></button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="content-bottom">
+              <button class="btn-order">1개 담기 12,900원</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //주문 옵션 팝업 -->
+    </div>
+  </body>
+</html>

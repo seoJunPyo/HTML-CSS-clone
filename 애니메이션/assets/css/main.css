@@ -1,0 +1,91 @@
+body,
+p {
+  margin: 0;
+}
+
+body {
+  height: 500vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+}
+
+.scroll-outer {
+  position: fixed;
+  width: 5px;
+  height: 100%;
+  border-radius: 14px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  overflow: hidden;
+}
+.scroll-outer .scroll-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: yellow;
+  border-radius: 14px;
+  transform: translateY(0);
+}
+
+.modalDiv {
+  display: none;
+}
+.modalDiv .bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 1;
+}
+.modalDiv .modal {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  background-color: #fff;
+  width: 50%;
+  padding: 25px;
+  border-radius: 14px;
+  z-index: 10;
+}
+.modalDiv .modal .close {
+  margin-top: 10px;
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 100%;
+  opacity: 0.5;
+  transform: translate(0, 0);
+}
+
+#targetBox {
+  position: relative;
+  display: inline-block;
+  border: 1px solid white;
+  overflow: hidden;
+}
+#targetBox h1 {
+  margin: 0;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+#targetBox #blind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: translateX(0);
+}/*# sourceMappingURL=main.css.map */
